@@ -1,3 +1,3 @@
 # plants
 
-https://github.com/Kristina-sinichka/plants/
+https://Kristina-sinichka.github.io/plants/
