@@ -19,7 +19,6 @@ navLink.forEach(link => {
 document.querySelector('.main').addEventListener('click', (event) => {
     if (event.target.className != '.burger'){
         navigation.classList.remove('_navigation_active');
-        burgerMenu.classList.toggle('_navigation_active');
     }
 })
 
