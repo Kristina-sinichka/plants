@@ -20,6 +20,9 @@ body{
 	font-family: 'Inter', sans-serif;
     
 }
+body._lock{
+    overflow: hidden;
+}
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
