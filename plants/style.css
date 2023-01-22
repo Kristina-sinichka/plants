@@ -18,7 +18,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 body{
 	font-family: 'Inter', sans-serif;
-    
 }
 body._lock{
     overflow: hidden;
@@ -664,7 +663,6 @@ h1 span{
     .service{
         height: 1780px;
         padding-top: 40px;
-
     }
     
     .service_button_box{
@@ -689,14 +687,14 @@ h1 span{
 }
 @media(max-width: 680px){
     .service{
-        height: 3150px;
+        height: 3250px;
         padding-top: 0px;
     }
     .service__top{
         padding-top: -5px;
     }
     .service_button_box{
-        max-width: 600px;
+        width: 100%;
         flex-wrap: wrap;
         justify-content: flex-start;
     }
@@ -704,27 +702,30 @@ h1 span{
         margin-bottom: 10px;
         margin-right: 15px;
     }
-    .service .button:last-child{
-        margin-bottom: 0px;
-    }
+    
     .card__box{
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        
     }
     .card{
         margin-top: 34px;
     }
 }
 @media(max-width: 380px){
-    
+    .service{
+        height: 3150px;
+    }
     .service__top{
-        height: 220px;
+        padding-top: 10px;
+        height: 230px;
     }
     .card_img768{
         height: 350px;
         width: 280px;
+    }
+    .card:first-child{
+        margin-top: 20px;
     }
     .card_text{
         padding: 0 20px;
