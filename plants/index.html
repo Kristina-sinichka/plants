@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
         <link rel="icon" href="img/logo_vector.svg" type="image/svg+xml">
 		<!-- Адаптив -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="style.css">
 		<!-- Кодировка страницы -->
@@ -34,15 +34,19 @@
                             <ul class="nav__items">
                                 <li class="nav__link"><a href="#home"><span>Home</span></a></li>
                                 <li class="nav__link"><a href="#about">About us</a></li>
-                                <li class="nav__link"><a href="#servise">Servise</a></li>
+                                <li class="nav__link"><a href="#servise">Service</a></li>
                                 <li class="nav__link"><a href="#price">Price</a></li>
                                 <li class="nav__link"><a href="#contacts">Contacts</a></li>
                             </ul>
                         </nav>
+                        <div class="burger">
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div> 
                 </div>
             </header>
-            <main>
+            <main class="main">
                 <section class="welcome" id="home">
                      <div class="container">
                          <div class="welcome__items">
@@ -92,31 +96,37 @@
                         <div class="card__box">
                             <div class="card">
                                 <img class="card_img" src="img/first.jpg" alt="img">
+                                <img class="card_img768" src="img/768/first768.jpg" alt="img">
                                 <h3 class="card_title">Garden care</h3>
                                 <p class="card_text">Lorem Ipsum has been the industry</p>
                             </div>
                             <div class="card">
                                 <img class="card_img" src="img/two.jpg" alt="img">
+                                <img class="card_img768" src="img/768/two768.jpg" alt="img">
                                 <h3 class="card_title">Planting</h3>
                                 <p class="card_text">Lorem Ipsum has been the industry</p>
                             </div>
                             <div class="card">
                                 <img class="card_img" src="img/three.jpg" alt="img">
+                                <img class="card_img768" src="img/768/three768.jpg" alt="img">
                                 <h3 class="card_title">Lawn care</h3>
                                 <p class="card_text">Lorem Ipsum has been the industry</p>
                             </div>
                             <div class="card">
                                 <img class="card_img" src="img/four.jpg" alt="img">
+                                <img class="card_img768" src="img/768/four768.jpg" alt="img">
                                 <h3 class="card_title">Planting</h3>
                                 <p class="card_text">Lorem Ipsum has been the industry</p>
                             </div>
                             <div class="card">
                                 <img class="card_img" src="img/five.jpg" alt="img">
+                                <img class="card_img768" src="img/768/five768.jpg" alt="img">
                                 <h3 class="card_title">Garden care</h3>
                                 <p class="card_text">Lorem Ipsum has been the industry</p>
                             </div>
                             <div class="card">
                                 <img class="card_img" src="img/six.jpg" alt="img">
+                                <img class="card_img768" src="img/768/six768.jpg" alt="img">
                                 <h3 class="card_title">Planting</h3>
                                 <p class="card_text">Lorem Ipsum has been the industry</p>
                             </div>
@@ -128,7 +138,7 @@
                     <div class="container">
                         <div class="prices__items">
                             <div class="prices__left">
-                                <h2 class="heading-black">Prices</h2>
+                                <h2 class="heading-black heading-black-main">Prices</h2>
                                 <div class="prices__box">
                                     <div class="prices__box__item">
                                         <div class="prices__box__item_text">Basics</div>
@@ -205,6 +215,7 @@
                 </div>
             </footer>
         </div>
+        <script src="script.js"></script>
 	</body>
 </html>
 
