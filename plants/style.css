@@ -20,9 +20,6 @@ body{
 	font-family: 'Inter', sans-serif;
     
 }
-/body._lock {
-    overflow: hidden;
-}
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
@@ -184,9 +181,12 @@ body{
         width: 100%;
         height: 400px;
         background-color: #fff;
-        padding: 100px 0px 30px 0px;
+        padding: 100px 55px 30px 0px;
         transition: left 0.5s ease 0s;
         overflow: auto;
+    }
+    .nav__link:first-child{
+        margin-left: 44px;
     }
     .navigation._navigation_active{
         left: 0;
@@ -204,7 +204,8 @@ body{
     }
     .nav__items{
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
+        width: 100%;
     }
     .nav__items > li {
         margin-bottom: 15px;
@@ -213,9 +214,8 @@ body{
         margin-bottom: 0px;
     }
     .nav__link a{
-    font-size: 26px;
-    line-height: 35px;
-
+        font-size: 26px;
+        line-height: 35px;
     }
 }
 @media(max-width: 380px){
@@ -223,12 +223,7 @@ body{
         height: 96px;
         padding: 10px 0;
     }
-    .nav__items{
-        opacity: 0;
-        visibility: hidden;
-        transition: all 1s ease 0s;
-        pointer-events: none;
-    }
+    
 }
 /*---------- welcome ----------*/
 .welcome{
@@ -352,9 +347,6 @@ h1 span{
         font-size: 30px;
         line-height: 40px;
     }
-    /.welcome{
-        
-    }
     .welcome_img{
         width: 200px;
     }
@@ -386,6 +378,9 @@ h1 span{
     }
     .welcome__items{
         padding-top: 0px;
+    }
+    .welcome__items .text{
+        line-height: 25px;
     }
     h1{
         font-size: 25px;
@@ -480,7 +475,6 @@ h1 span{
         flex-wrap: wrap;
         justify-content: center;
         padding-top: 20px;
-        /height: 783px;
     }
     .about_left{
         max-width: 100%;   
@@ -508,8 +502,6 @@ h1 span{
         height: 783px;
         padding-top: 10px;
     }
-    .about_left .heading{
-    }
     .about_left .text{
         font-size: 18px;
         line-height: 25px;
@@ -529,7 +521,7 @@ h1 span{
     }
     .about__items{
         padding-top: 10px;
-        height: 516px;
+        height: 500px;
     }
     .about_left .heading{
         text-align: center;
@@ -538,7 +530,6 @@ h1 span{
         height: auto;
     }
     .about__text__box{
-        /width: 328px;
         margin-top: -5px;
     }
 
@@ -549,11 +540,11 @@ h1 span{
     .heading{
         font-size: 25px;
         line-height: 33px;
-    /margin: 20px 0;
     }
     .about_img{
-        margin-top: 2px;
+        margin-top: 0px;
         height: 147px;
+        margin-bottom: 15px;
     }
 }
 @media(max-width: 360px){
@@ -669,11 +660,12 @@ h1 span{
 @media(max-width: 768px){
     .service{
         height: 1780px;
-        padding-top: 0px;
+        padding-top: 40px;
 
     }
+    
     .service_button_box{
-        margin-top: 31px;
+        margin-top: 22px;
         flex-wrap: wrap;
     }
     .service__top{
@@ -695,6 +687,7 @@ h1 span{
 @media(max-width: 680px){
     .service{
         height: 3150px;
+        padding-top: 0px;
     }
     .service__top{
         padding-top: -5px;
@@ -705,10 +698,6 @@ h1 span{
         justify-content: flex-start;
     }
     .button{
-        /width: 121px;
-        /height: 35px;
-        /font-size: 15px;
-        /line-height: 20px;
         margin-bottom: 10px;
         margin-right: 15px;
     }
@@ -907,7 +896,6 @@ h1 span{
     }
     .prices__right .button{
         margin-right: 0;
-        /margin-bottom: 10px;
     }
     
     .heading-black-main{
@@ -1115,9 +1103,6 @@ h1 span{
     }
     .footer__center{
        margin: 0px; 
-    }
-    .footer_text{
-        
     }
 }
 
